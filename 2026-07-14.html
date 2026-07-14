@@ -1,49 +1,57 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>生物医药简报 · 2026-07-14</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0a0e27;color:#e0e0e0;line-height:1.7;padding:20px;min-height:100vh}
-.w{max-width:800px;margin:0 auto}
-header{text-align:center;padding:30px 0 20px;border-bottom:1px solid #1e2a4a;margin-bottom:24px}
-header h1{font-size:24px;background:linear-gradient(135deg,#00d4aa,#7c5cfc,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-header .d{color:#8892b0;font-size:14px;margin-top:6px}
-header .n{margin-top:12px}
-header .n a{color:#64ffda;text-decoration:none;font-size:13px;padding:4px 12px;border:1px solid #1e2a4a;border-radius:4px;margin:0 4px}
-header .n a:hover{background:#1e2a4a}
-.card{background:#111633;border-radius:12px;padding:20px 24px;margin-bottom:20px}
-.card h2{font-size:18px;margin-bottom:12px}
-.card .c h1{font-size:20px;margin:16px 0 8px;color:#ccd6f6}
-.card .c h2{font-size:16px;color:#64ffda;margin:12px 0 6px;border-bottom:1px solid #1e2a4a;padding-bottom:4px}
-.card .c h3{font-size:14px;color:#a8b2d1;margin:10px 0 4px;font-weight:600}
-.card .c p{margin:4px 0;font-size:14px;color:#c0c8e0}
-.card .c blockquote{border-left:2px solid #1e2a4a;padding-left:12px;margin:4px 0;font-size:13px;color:#8892b0}
-.card .c code{background:#1a1f3a;padding:1px 6px;border-radius:3px;font-size:12px;color:#ffa07a}
-.card .c hr{border:none;border-top:1px solid #1e2a4a;margin:12px 0}
-.card .c strong{color:#e6f1ff}
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>生物医药简报 · 2026-07-14</title><style>*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#070b1a;color:#d0d8f0;line-height:1.7;padding:20px;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at 20% 50%,rgba(0,212,170,.06) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(124,92,252,.06) 0%,transparent 50%),radial-gradient(ellipse at 50% 80%,rgba(255,107,107,.04) 0%,transparent 50%);pointer-events:none;z-index:0}
+.w{max-width:800px;margin:0 auto;position:relative;z-index:1}
+/* Header */
+header{text-align:center;padding:40px 0 24px;margin-bottom:28px;position:relative}
+header::after{content:'';position:absolute;bottom:0;left:10%;width:80%;height:1px;background:linear-gradient(90deg,transparent,rgba(0,212,170,.3),rgba(124,92,252,.3),rgba(255,107,107,.3),transparent)}
+header h1{font-size:26px;font-weight:700;background:linear-gradient(135deg,#00d4aa,#7c5cfc,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-shadow:none;letter-spacing:2px}
+header .d{color:#5a6a8a;font-size:13px;margin-top:6px;letter-spacing:1px}
+header .n{margin-top:14px;display:flex;justify-content:center;gap:8px}
+header .n a{color:#8899bb;text-decoration:none;font-size:12px;padding:5px 14px;border:1px solid rgba(100,255,218,.15);border-radius:20px;background:rgba(100,255,218,.05);transition:all .3s}
+header .n a:hover{color:#64ffda;border-color:rgba(100,255,218,.4);background:rgba(100,255,218,.1);box-shadow:0 0 15px rgba(100,255,218,.1)}
+/* Topic Cards */
+.card{background:linear-gradient(135deg,rgba(17,22,51,.85),rgba(17,22,51,.6));backdrop-filter:blur(10px);border-radius:14px;padding:22px 26px;margin-bottom:22px;border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden;transition:all .3s}
+.card:hover{border-color:rgba(255,255,255,.12);box-shadow:0 4px 30px rgba(0,0,0,.3)}
+.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--accent,rgba(0,212,170,.4)),transparent);opacity:.6}
+.card h2{font-size:17px;margin-bottom:10px}
+.card .c h1{font-size:18px;margin:14px 0 6px;color:#d0d8f0}
+.card .c h2{font-size:15px;color:#64ffda;margin:10px 0 5px;border-bottom:1px solid rgba(100,255,218,.1);padding-bottom:3px}
+.card .c h3{font-size:13px;color:#8899bb;margin:8px 0 3px;font-weight:600}
+.card .c p{margin:3px 0;font-size:13px;color:#b0b8d0}
+.card .c blockquote{border-left:2px solid rgba(100,255,218,.15);padding-left:10px;margin:3px 0;font-size:12px;color:#6a7a9a}
+.card .c code{background:rgba(100,255,218,.08);padding:1px 5px;border-radius:3px;font-size:11px;color:#ffa07a}
+.card .c hr{border:none;border-top:1px solid rgba(255,255,255,.06);margin:10px 0}
+.card .c strong{color:#e6f0ff}
 .card .c em{color:#64ffda}
-.card .c a{color:#64ffda;text-decoration:none}
-.card .c a:hover{text-decoration:underline}
-.empty{color:#555;text-align:center;padding:20px}
-.news-item{padding:8px 0;border-bottom:1px solid #1e2a4a}
+.card .c a{color:#64ffda;text-decoration:none;transition:color .2s}
+.card .c a:hover{color:#00ffcc;text-decoration:underline}
+/* News Section */
+.news-item{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)}
 .news-item:last-child{border-bottom:none}
-.news-item a{color:#c0c8e0;text-decoration:none;font-size:14px}
+.news-item a{color:#b0b8d0;text-decoration:none;font-size:13px;transition:color .2s}
 .news-item a:hover{color:#64ffda}
-.news-item .nd{color:#495670;font-size:12px;margin-top:2px}
-.news-item .src{color:#ffd700;font-size:11px;margin-left:6px;padding:1px 5px;border:1px solid #ffd700;border-radius:3px}
-.news-item .lang{color:#87ceeb;font-size:11px;margin-left:4px}
-.conf-item{padding:10px 8px;margin:6px 0;background:#0e1433;border-radius:6px;font-size:14px}
-.conf-item strong{color:#e6f1ff}
-.conf-item .muted{color:#8892b0;font-size:12px}
-.conf-item .nd{color:#495670;font-size:12px}
-.conf-item .tag{color:#64ffda;font-size:12px}
-footer{text-align:center;color:#495670;font-size:12px;padding:20px 0}
-@media(max-width:600px){body{padding:12px}.card{padding:14px 16px}header h1{font-size:20px}}
-</style></head><body><div class="w">
-<header><h1>🧬 生物医药每日简报</h1><div class="d">2026-07-14</div><div class="n"><a href="index.html">📅 今天</a><a href="history.html">📋 历史</a></div></header>
-<div class="card" style="border-left:4px solid #00d4aa"><h2>🧬 🧬 外泌体</h2><div class="c"><h1>🧬 外泌体简报 — 2026-07-14</h1>
+.news-item .nd{color:#3a4a6a;font-size:11px;margin-top:1px}
+.news-item .src{color:#ffd700;font-size:10px;margin-left:5px;padding:1px 4px;border:1px solid rgba(255,215,0,.2);border-radius:3px}
+.news-item .tp{font-size:10px;margin-left:4px;padding:1px 4px;border-radius:3px;background:rgba(100,255,218,.08);color:#64ffda}
+/* Conference */
+.conf-item{padding:9px 10px;margin:5px 0;background:rgba(14,20,51,.6);border-radius:8px;font-size:13px;border:1px solid rgba(255,255,255,.04)}
+.conf-item strong{color:#d0d8f0}
+.conf-item .mt{color:#5a6a8a;font-size:11px;margin-left:4px}
+.conf-item .nd{color:#3a4a6a;font-size:11px}
+.conf-item .tag{color:#64ffda;font-size:11px}
+/* Footer Glow Line */
+footer{text-align:center;color:#2a3a5a;font-size:11px;padding:30px 0;position:relative}
+footer::before{content:'';position:absolute;top:0;left:20%;width:60%;height:1px;background:linear-gradient(90deg,transparent,rgba(100,255,218,.1),transparent)}
+.empty{color:#4a5a7a;text-align:center;padding:15px;font-size:13px}
+@media(max-width:600px){body{padding:12px}.card{padding:16px 18px}header h1{font-size:21px}}
+</style></head>
+<body><div class="w">
+<header><h1>🧬 生物医药每日简报</h1><div class="d">2026-07-14</div>
+<div class="n"><a href="index.html">📅 今天</a><a href="history.html">📋 历史</a></div></header>
+<div class="card" style="--accent:#00d4aa"><h2>🧬 🧬 外泌体</h2><div class="c"><h1>🧬 外泌体简报 — 2026-07-14</h1>
 <br>
 <h2>📚 文献 (5)</h2>
 <br>
@@ -102,7 +110,7 @@ footer{text-align:center;color:#495670;font-size:12px;padding:20px 0}
 <hr>
 <p>&gt; 🤖 Exosome Daily · 2026-07-14 · 共11条</p>
 <p>&gt; 来源: PubMed/ClinicalTrials/bioRxiv/News</p></div></div>
-<div class="card" style="border-left:4px solid #7c5cfc"><h2>🔬 🔬 TCR-T</h2><div class="c"><h1>🔬 TCR-T 每日简报 — 2026-07-14</h1>
+<div class="card" style="--accent:#7c5cfc"><h2>🔬 🔬 TCR-T</h2><div class="c"><h1>🔬 TCR-T 每日简报 — 2026-07-14</h1>
 <br>
 <h2>📚 文献 (1)</h2>
 <br>
@@ -135,7 +143,7 @@ footer{text-align:center;color:#495670;font-size:12px;padding:20px 0}
 <hr>
 <p>&gt; 🔬 TCR-T Daily · 2026-07-14 · 共6条</p>
 <p>&gt; 来源: PubMed/ClinicalTrials/bioRxiv</p></div></div>
-<div class="card" style="border-left:4px solid #ff6b6b"><h2>💉 💉 in vivo CAR-T</h2><div class="c"><h1>💉 in vivo CAR-T 每日简报 — 2026-07-14</h1>
+<div class="card" style="--accent:#ff6b6b"><h2>💉 💉 in vivo CAR-T</h2><div class="c"><h1>💉 in vivo CAR-T 每日简报 — 2026-07-14</h1>
 <br>
 <h2>📚 文献 (4)</h2>
 <br>
@@ -185,17 +193,19 @@ footer{text-align:center;color:#495670;font-size:12px;padding:20px 0}
 <hr>
 <p>&gt; 💉 In Vivo CAR-T Daily · 2026-07-14 · 共9条</p>
 <p>&gt; 来源: PubMed/ClinicalTrials/bioRxiv</p></div></div>
+<div class="card" style="--accent:#ffd700"><h2>💰 投融资 · 企业动态</h2><div class="news-list"><div class="news-item"><a href="https://36kr.com/newsflashes/3895014503054338?f=rss" target="_blank">迪哲医药：与阿斯利康签署授权许可协议</a><span class="src">36氪</span><div class="nd">2026-07-14 12:53</div></div>
+<div class="news-item"><a href="https://www.prnewswire.com/news-releases/le-groupe-kanadevia-accelere-lexpansion-mondiale-de-ses-activites-liees-a-lhydrogene-vert-302824644.html" target="_blank">Le groupe Kanadevia accélère l'expansion mondiale de ses activités liées à l'hydrogène vert</a><span class="src">PRNewswire</span><span class="tp">🧬</span><div class="nd">Tue, 14 Jul 2026</div></div>
+<div class="news-item"><a href="https://www.prnewswire.com/news-releases/kanadevia-group-beschleunigt-die-weltweite-expansion-ihrer-geschaftsbereiche-im-bereich-gruner-wasserstoff-302824641.html" target="_blank">Kanadevia Group beschleunigt die weltweite Expansion ihrer Geschäftsbereiche im Bereich grüner Wasserstoff</a><span class="src">PRNewswire</span><span class="tp">🧬</span><div class="nd">Tue, 14 Jul 2026</div></div>
+<div class="news-item"><a href="https://www.prnewswire.com/news-releases/alzheimers-blood-test-could-bring-highly-accurate-diagnosis-into-everyday-clinical-care-302824484.html" target="_blank">ALZHEIMER'S BLOOD TEST COULD BRING HIGHLY ACCURATE DIAGNOSIS INTO EVERYDAY CLINICAL CARE</a><span class="src">PRNewswire</span><span class="tp">🧬</span><div class="nd">Tue, 14 Jul 2026</div></div>
+<div class="news-item"><a href="https://www.prnewswire.com/news-releases/xinhua-silk-road-heilongjiang-launches-culture-and-tourism-promotion-event-in-jixi-city-302824550.html" target="_blank">Xinhua Silk Road: Heilongjiang launches culture and tourism promotion event in Jixi City</a><span class="src">PRNewswire</span><span class="tp">🧬</span><div class="nd">Tue, 14 Jul 2026</div></div>
+<p style="font-size:11px;color:#3a4a6a;margin-top:6px;text-align:right">来源: 36氪 / PRNewswire · 仅显示相关企业</p></div></div>
+<div class="card" style="--accent:#87ceeb"><h2>📢 重要会议</h2><div class="conf-item" style="border-left:3px solid #98fb98"><strong>ESMO 2026</strong><span class="mt">欧洲肿瘤内科学会</span><br><span class="nd">2026-09-19~23</span> · <span class="tag">66天后</span></div>
+<div class="conf-item" style="border-left:3px solid #7c5cfc"><strong>TCR-T Workshop</strong><span class="mt">TCR-T专题研讨会</span><br><span class="nd">2026-10-12~14</span> · <span class="tag">89天后</span></div>
+<p style="font-size:12px;color:#64ffda;margin:10px 0 4px">📋 近期会议资讯</p><div class="news-item"><a href="https://doi.org/10.1016/j.biopha.2026.119755" target="_blank">Stem cell-derived exosome therapy for traumatic brain injury and its auditory co</a><span class="src">PubMed</span><div class="nd">Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie</div></div>
+<div class="news-item"><a href="https://doi.org/10.1016/j.ejca.2026.116925" target="_blank">Evidence for early, clinically silent medial temporal lobe inflammation after CA</a><span class="src">PubMed</span><div class="nd">European journal of cancer (Oxford, England : 1990)</div></div>
+<div class="news-item"><a href="https://doi.org/10.1182/bloodadvances.2025018015" target="_blank">Minor histocompatibility antigen TCR-T.</a><span class="src">PubMed</span><div class="nd">Blood advances</div></div>
+<div class="news-item"><a href="https://doi.org/10.1007/s11033-026-12255-2" target="_blank">Exosome-driven treatments for hair regrowth in androgenetic alopecia: a systemat</a><span class="src">PubMed</span><div class="nd">Molecular biology reports</div></div>
+</div>
 
-<div class="card" style="border-left:4px solid #ffd700"><h2>💰 投融资动态</h2><div class="news-list"><div class="news-item"><a href="https://36kr.com/p/3894914381970438?f=rss" target="_blank">🎁36氪放福利啦！体验10秒，即可免费抽AirPods 4、Redmi手环、超人帆布包！</a><span class="src">[36氪]</span><span class="lang">zh</span><div class="nd">2026-07-14 12:21</div></div>
-<div class="news-item"><a href="https://36kr.com/p/3894935854677249?f=rss" target="_blank">36氪首发 | 浙大系桌面CNC团队获商汤国香、首形科技等近亿元天使轮，要用AI技术降低制造门槛</a><span class="src">[36氪]</span><span class="lang">zh</span><div class="nd">2026-07-14 11:34</div></div>
-<div class="news-item"><a href="https://36kr.com/p/3894821059918855?f=rss" target="_blank">36氪首发 | 前博世自动驾驶算法工程师创业，用合成数据做触觉大模型</a><span class="src">[36氪]</span><span class="lang">zh</span><div class="nd">2026-07-14 09:38</div></div>
-<div class="news-item"><a href="https://36kr.com/p/3893976502287618?f=rss" target="_blank">人形机器人公司逐际动力完成2亿美元Pre-IPO轮融资，投后估值达150亿元｜最前线</a><span class="src">[36氪]</span><span class="lang">zh</span><div class="nd">2026-07-14 08:46</div></div>
-<div class="news-item"><a href="https://36kr.com/p/3894729787767810?f=rss" target="_blank">8点1氪丨海南将成中国首个禁售燃油车省份；长鑫科技部分员工入股成本低至1毛；SK海力士暴跌15%</a><span class="src">[36氪]</span><span class="lang">zh</span><div class="nd">2026-07-14 08:04</div></div>
-<div class="news-item"><a href="https://36kr.com/p/3893943402707460?f=rss" target="_blank">氪星晚报 ｜Meta宣布将追加400亿美元投资路易斯安那州数据中心；字节探索自动驾驶，Seed世界模型团队负责；《扩大消费“十五五”规划》：优化入境消费环境，稳步扩大免签国家范围</a><span class="src">[36氪]</span><span class="lang">zh</span><div class="nd">2026-07-13 19:59</div></div>
-</div></div>
-<div class="card" style="border-left:4px solid #87ceeb"><h2>📢 重要会议</h2><div class="conf-list"><div class="conf-item" style="border-left:3px solid #98fb98"><strong>ESMO 2026</strong> <span class="muted">欧洲肿瘤内科学会年会</span><br><span class="nd">2026-09-19~23</span> · <span class="tag">66天后</span></div>
-<div class="conf-item" style="border-left:3px solid #7c5cfc"><strong>TCR-T Workshop 2026</strong> <span class="muted">TCR-T专题研讨会</span><br><span class="nd">2026-10-12~14</span> · <span class="tag">89天后</span></div>
-</div></div>
-
-<footer><p>🤖 自动生成 · 数据: PubMed / ClinicalTrials / bioRxiv / 36氪 / PRNewswire</p><p>更新 2026-07-14 13:47</p></footer>
+<footer><p>PubMed / ClinicalTrials / bioRxiv / 36氪 / PRNewswire</p><p>自动生成 · 每日8:00更新</p></footer>
 </div></body></html>
